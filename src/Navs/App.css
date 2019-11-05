@@ -1,0 +1,85 @@
+/*NAVBAR ELEMENTS*/
+li {
+    padding:        1em;
+    text-align:     center;
+}
+ul {
+    padding:        0em;
+    margin:         0em;
+}
+button {
+    font-size:      2.5rem;
+    margin-top:     1em;
+    margin-bottom:  0.5em;
+    color:          white;
+    background:     transparent;
+    border:         none;
+    cursor:         pointer;
+    outline:        none;
+    display:        flex;
+    flex-direction: column;
+}
+
+/*NAVBAR CLASSES*/
+.navbar {
+    width:              100%; 
+    background-color:   green;
+    color:              white;
+    display:            flex;
+    flex-direction:     column;
+    align-items:        center;
+}
+.links {
+    height:             0;
+    overflow:           hidden;
+    list-style-type:    none;
+    font-size:          1em;
+}
+.show-nav {
+    height:             100%;
+}
+
+/*NAVBAR SCREEN SIZE*/
+@media screen and (min-width: 768px) {
+
+    button {
+        display:         none;
+    }
+    .links {
+        height:          auto;
+        display:         flex;
+        font-size:       1rem;
+    }
+    .navbar {
+        width:           100%;
+        background-color:green;
+        color:           white;
+        padding:         1em;
+    }
+    li {
+        padding:         0 3em;
+    }
+}
+
+
+/*LINKS*/
+a:link {
+    text-decoration:    none;
+    color:              rgb(255, 255, 255)
+  }
+  a:visited {
+    text-decoration:    none;
+    color:              rgb(255, 255, 255)
+  }
+  a:focus {
+    text-decoration:    none;
+    color:              rgb(238, 223, 16);
+  }
+  a:hover {
+    text-decoration:    none;
+    color:              rgb(238, 223, 16);
+  }
+  a:active {
+    text-decoration:    none;
+    color:              rgb(238, 223, 16);
+  }
